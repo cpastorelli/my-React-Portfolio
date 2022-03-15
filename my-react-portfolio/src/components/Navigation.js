@@ -3,18 +3,18 @@ import Button from './Button'
 
 function Navigation() {
     return ( 
-    <section class="header bg-light navbar-light">
-        <nav class="links navbar navbar-expand-sm">
+    <section className="header bg-light navbar-light">
+        <nav className="links navbar navbar-expand-sm">
             <Button />
-            <ul class=" navbar-nav collapse navbar-collapse" id="navbarDropdown">
-                <li class="nav-item">
-                    <a href="#about-me" class="nav-link">About Me</a>
+            <ul className=" navbar-nav collapse navbar-collapse" id="navbarDropdown">
+                <li className="nav-item">
+                    <a href="#about-me" className="nav-link">About Me</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#my-work" class="nav-link">My Work</a>
+                <li className="nav-item">
+                    <a href="#my-work" className="nav-link">My Work</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#contact-me" class="nav-link">Contact Me</a>
+                <li className="nav-item">
+                    <a href="#contact-me" className="nav-link">Contact Me</a>
                 </li>
             </ul>
         </nav>

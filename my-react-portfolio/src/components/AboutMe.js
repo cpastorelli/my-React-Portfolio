@@ -1,12 +1,12 @@
-import React from 'react';
-import MyPhoto from '../assets/myPhoto.jpg';
+import React, {ReactComponent} from 'react';
+import MyPhoto from '../assets/myphoto.jpg';
 
 
 function AboutMe() {
 return (
-    <section class="about-me" id="about-me">
+    <section className="about-me" id="about-me">
         <h3>About Me</h3>
-        <MyPhoto />
+        <img  src={MyPhoto} />
         <p>
         Presently, I manually test new features to ensure our product quality. I do this by reviewing project management methodologies like agile (scrum), going through Microsoft training, or playing with our API calls through Postman.
         <br />
