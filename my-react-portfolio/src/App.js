@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './App.css';
 
 import Title from './components/Title';
@@ -10,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div classNameName="App">
+    <div className="App">
       <Title />
       <Navigation />
       <AboutMe />

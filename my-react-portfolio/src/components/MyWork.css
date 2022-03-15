@@ -1,0 +1,39 @@
+.work-container {
+    display: grid;
+    text-align: center;
+    width: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+}
+
+.card {
+    width: 90%;
+    margin-top: 1%;
+    
+}
+
+.card-title {
+    color: black;
+    font-weight: bolder;
+}
+
+.card-body {
+
+    background-color: rgb(247, 247, 247);
+    display: grid;
+    justify-items: center;
+    
+}
+
+.images {
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+}
+
+.card-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center; 
+}

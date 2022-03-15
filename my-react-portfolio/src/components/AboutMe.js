@@ -1,6 +1,5 @@
-import React, {ReactComponent} from 'react';
-import MyPhoto from '../assets/myphoto.jpg';
-
+import MyPhoto from '../assets/images/myphoto.jpg';
+import './AboutMe.css'
 
 function AboutMe() {
 return (

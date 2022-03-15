@@ -1,4 +1,12 @@
-import React from 'react';
+import './MyWork.css';
+import covidTravel from '../assets/images/covidTravel.png';
+import dayPlannerSM from '../assets/images/dayPlannerSM.png';
+import nodeExample from '../assets/images/nodeExample.png';
+import passwordGeneratorSM from '../assets/images/passwordGeneratorSM.png';
+import teamProfiles from '../assets/images/teamProfiles.png';
+import timedQuizSM from '../assets/images/timedQuizSM.png';
+import tripPlannerSM from '../assets/images/tripPlannerSM.png';
+import WeatherDashSM from '../assets/images/WeatherDashSM.png';
 
 
 const myProject = [
@@ -9,7 +17,7 @@ const myProject = [
         "link1": "https://cpastorelli.github.io/Password-Generator/", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/Password-Generator",
-        "img": "../assets/passwordGeneratorSM.png",
+        "img": passwordGeneratorSM,
         "alt": "A password being generated based on certain criteria"
     },
     {
@@ -19,7 +27,7 @@ const myProject = [
         "link1": "https://cpastorelli.github.io/day-planner/", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/Day-Planner",
-        "img": "../assets/dayPlannerSM.png",
+        "img": dayPlannerSM,
         "alt": "A functional day planner"
     },
     {
@@ -29,7 +37,7 @@ const myProject = [
         "link1": "https://cpastorelli.github.io/timed-quiz/", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/timed-quiz",
-        "img": "../assets/timedQuizSM.png",
+        "img": timedQuizSM,
         "alt": "A timed quiz setup"
     },
     {
@@ -39,7 +47,7 @@ const myProject = [
         "link1": "https://cpastorelli.github.io/weather-Dashboard/", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/weather-Dashboard",
-        "img": "../assets/WeatherDashSM.png",
+        "img": WeatherDashSM,
         "alt": "Weather dashboard showing the weather forcast for the city of Houston"
     },
     {
@@ -49,7 +57,7 @@ const myProject = [
         "link1": "https://amdiebolt.github.io/trip-planner/", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/trip-planner",
-        "img": "../assets/tripPlannerSM.png",
+        "img": tripPlannerSM,
         "alt": "Get weather and entertainment shows based on city searched"
     },
     {
@@ -59,7 +67,7 @@ const myProject = [
         "link1": "https://intense-mesa-45226.herokuapp.com/", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/Covid-travel-search",
-        "img": "../assets/covidTravel.png",
+        "img": covidTravel,
        "alt": "Find Covid Travel Restrictions for countries you wish to visit"
     },
     {
@@ -69,7 +77,7 @@ const myProject = [
         "link1": "https://cpastorelli.github.io/Team_Profile_Generator/", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/Team_Profile_Generator",
-        "img": "../assets/teamProfiles.png",
+        "img": teamProfiles,
         "alt": "Employee profiles for a team"
     },
     {
@@ -79,7 +87,7 @@ const myProject = [
         "link1": " https://www.screencast.com/t/FHwNjb5pBO", 
         "ghname": "Repository",
         "link2": "https://github.com/cpastorelli/README-Generator",
-        "img": "../assets/nodeExample.png",
+        "img": nodeExample,
         "alt": "Sample questions from README.md Generator Program"
     }
 ] 
@@ -87,22 +95,14 @@ const myProject = [
 
 function MyWork() {
     const workItems = myProject;
-    console.log(workItems);
-
     return(
         <div>
             {workItems.map((item) => {
-                console.log(item);
-                console.log(item.title);
-                console.log(item.subtitle);
-                console.log(item.deployname);
-                console.log(item.ghname);
-                // console.log(item.img);
                 return (
                     <div className="card" key={item.title}> 
                     
                         <div className="card-body">
-                            <img src={item.img} alt={item.alt} />
+                            <img className="images" src={item.img} alt={item.alt} />
                             <h4 className="card-title">{item.title}</h4>
                             <h6 className="card-subtitle">{item.subtitle}</h6>
                             <a href={item.link1} target="_blank" className="card-link">{item.deployname}</a>
